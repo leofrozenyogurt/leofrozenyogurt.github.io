@@ -33,6 +33,11 @@
 				controller  : 'mainController'
 			})
 
+			.when('/metrics', {
+				templateUrl : 'pages/metrics.html',
+				controller  : 'mainController'
+			})
+
 			.when('/profile', {
 				templateUrl : 'pages/profile.html',
 				controller  : 'mainController'
