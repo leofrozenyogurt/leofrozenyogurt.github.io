@@ -50,7 +50,7 @@
 				$('#myModal').modal('show');
 			});
 
-			$('#payment').click(function(){
+			$('.payment').click(function(){
 				$('#paymentModal').modal('show');
 			});
 
