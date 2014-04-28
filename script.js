@@ -54,6 +54,10 @@
 				$('#paymentModal').modal('show');
 			});
 
+			$('.create').click(function(){
+				$('#createModal').modal('show');
+			});
+
 			$('.red_video').popover({
 			offset: 10,
 			trigger: 'manual',
