@@ -21,8 +21,12 @@
 			.when('/contact', {
 				templateUrl : 'pages/contact.html',
 				controller  : 'contactController'
-			});
+			})
 
+			.when('/signup', {
+				templateUrl : 'pages/signup.html',
+				controller  : 'mainController'
+			});
 
 	});
 
@@ -30,7 +34,7 @@
 	scotchApp.controller('mainController', function($scope) {
 		// create a message to display in our view
 		$scope.message = 'Everyone come and see how good I look!';
-		
+
 	});
 
 	scotchApp.controller('aboutController', function($scope) {
