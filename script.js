@@ -31,6 +31,11 @@
 			.when('/organizations', {
 				templateUrl : 'pages/organizations.html',
 				controller  : 'mainController'
+			})
+
+			.when('/profile', {
+				templateUrl : 'pages/profile.html',
+				controller  : 'mainController'
 			});
 
 	});
