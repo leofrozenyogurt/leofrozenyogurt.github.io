@@ -35,6 +35,16 @@
 		// create a message to display in our view
 		$scope.message = 'Everyone come and see how good I look!';
 
+		$(document).ready(function(){
+			$('#login').click(function(){
+				$('#myModal').modal('show');
+			});
+
+			$('#payment').click(function(){
+				$('#paymentModal').modal('show');
+			});
+		});
+
 	});
 
 	scotchApp.controller('aboutController', function($scope) {

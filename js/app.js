@@ -1,5 +1,10 @@
-$(document).ready(function(){
-	$('#login').click(function(){
-		$('#myModal').modal('show');
-	})
-})
+// $(document).ready(function(){
+// 	$('#login').click(function(){
+// 		$('#myModal').modal('show');
+// 	});
+
+// 	$('#payment').click(function(){
+// 		$('#myModal').modal('show');
+// 	});
+
+// });
