@@ -38,6 +38,11 @@
 				controller  : 'mainController'
 			})
 
+			.when('/live_vonvo', {
+				templateUrl : 'pages/live_vonvo.html',
+				controller  : 'mainController'
+			})
+
 			.when('/profile', {
 				templateUrl : 'pages/profile.html',
 				controller  : 'mainController'
