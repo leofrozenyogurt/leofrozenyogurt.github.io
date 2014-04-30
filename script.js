@@ -33,6 +33,16 @@
 				controller  : 'mainController'
 			})
 
+			.when('/metrics', {
+				templateUrl : 'pages/metrics.html',
+				controller  : 'mainController'
+			})
+
+			.when('/live_vonvo', {
+				templateUrl : 'pages/live_vonvo.html',
+				controller  : 'mainController'
+			})
+
 			.when('/profile', {
 				templateUrl : 'pages/profile.html',
 				controller  : 'mainController'
@@ -50,8 +60,12 @@
 				$('#myModal').modal('show');
 			});
 
-			$('#payment').click(function(){
+			$('.payment').click(function(){
 				$('#paymentModal').modal('show');
+			});
+
+			$('.create').click(function(){
+				$('#createModal').modal('show');
 			});
 
 			$('.red_video').popover({

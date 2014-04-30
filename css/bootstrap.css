@@ -93,9 +93,11 @@ figure {
   margin: 1em 40px;
 }
 hr {
-  height: 0;
+  height: 1;
+  color:black;
   -moz-box-sizing: content-box;
        box-sizing: content-box;
+
 }
 pre {
   overflow: auto;
@@ -338,7 +340,7 @@ hr {
   margin-top: 20px;
   margin-bottom: 20px;
   border: 0;
-  border-top: 1px solid #eee;
+  border-top: 1px solid black;
 }
 .sr-only {
   position: absolute;
@@ -5871,4 +5873,12 @@ button.close {
 
 .red_video {
   color:red;
+}
+
+.grey_video_box {
+  height: 300px;
+width: 400px;
+background: grey;
+margin-bottom: 5px;
+
 }
