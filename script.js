@@ -18,35 +18,10 @@
 			})
 
 			// route for the contact page
-			.when('/contact', {
-				templateUrl : 'pages/contact.html',
-				controller  : 'contactController'
+			.when('/blog', {
+				templateUrl : 'pages/blog.html',
+				controller  : 'blogController'
 			})
-
-			.when('/signup', {
-				templateUrl : 'pages/signup.html',
-				controller  : 'mainController'
-			})
-
-			.when('/organizations', {
-				templateUrl : 'pages/organizations.html',
-				controller  : 'mainController'
-			})
-
-			.when('/metrics', {
-				templateUrl : 'pages/metrics.html',
-				controller  : 'mainController'
-			})
-
-			.when('/live_vonvo', {
-				templateUrl : 'pages/live_vonvo.html',
-				controller  : 'mainController'
-			})
-
-			.when('/profile', {
-				templateUrl : 'pages/profile.html',
-				controller  : 'mainController'
-			});
 
 	});
 
@@ -60,7 +35,7 @@
 
 	});
 
-	scotchApp.controller('aboutController', function($scope) {
+	scotchApp.controller('blogController', function($scope) {
 		$scope.message = 'Look! I am an about page.';
 	});
 
