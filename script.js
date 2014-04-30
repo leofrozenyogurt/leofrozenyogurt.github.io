@@ -30,8 +30,16 @@
 		// create a message to display in our view
 		$scope.message = 'Everyone come and see how good I look!';
 
-		$(document).ready(function(){
-		});
+		  $scope.posts = [
+		    {'title': 'Famo.us and its setbacks',
+		     'author': 'Leo Royzengurt',
+		     'date' : ' April 28th'
+		 	},
+		    {'title': 'Belongs_to and its uses',
+		     'author': 'Leo Royzengurt',
+		     'date' : ' April 30th'
+		 	},		   
+		  ];
 
 	});
 

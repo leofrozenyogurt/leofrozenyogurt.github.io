@@ -113,62 +113,22 @@
       </div>
       
       <div id="blog-preview-holder" class="offix">
-      
-      <a class="post-link" href="#contact">
-        <div class="post-preview pad-large offix medium-12 left text-center" style="background-image: url(http://37.media.tumblr.com/3afad829ce330a66b3bbb98831c1c393/tumblr_mx3tpto69r1st5lhmo1_1280.jpg); background-position: initial initial; background-repeat: initial initial;">
-          <div class="post-overlay"></div>
-          
-          <div class="post-preview-content">
-            <span class="date"><em>25th Feb</em></span>
-            <h2>Pondering the necessity of spinning icons</h2>
-            <h6 class="alt-h">Posted by Craig Garner</h6>
-            <div class="line"></div>
-          </div>
+      <div ng-repeat="post in posts"> 
+        <a class="post-link" href="#contact">
+          <div class="post-preview pad-large offix medium-12 left text-center" style="background-image: url(http://37.media.tumblr.com/3afad829ce330a66b3bbb98831c1c393/tumblr_mx3tpto69r1st5lhmo1_1280.jpg); background-position: initial initial; background-repeat: initial initial;">
+            <div class="post-overlay"></div>
+            
+            <div class="post-preview-content">
+              <span class="date"><em>{{post.date}}</em></span>
+              <h2>{{post.title}}</h2>
+              <h6 class="alt-h">Posted by {{post.author}}</h6>
+              <div class="line"></div>
+            </div>
 
-        </div><!--end of post preview-->
-      </a>
-      
-      <a class="post-link" href="#contact">
-        <div class="post-preview pad-large offix medium-12 left text-center" style="background-image: url(http://37.media.tumblr.com/050b3fbdfc0005dfa550e137a9440981/tumblr_ms9mveNXX21st5lhmo1_1280.jpg); background-position: initial initial; background-repeat: initial initial;">
-          <div class="post-overlay"></div>
-          
-          <div class="post-preview-content">
-            <span class="date"><em>21st Feb</em></span>
-            <h2>Discussing the stupidity of skill bars</h2>
-            <h6 class="alt-h">Posted by James Hillier</h6>
-            <div class="line"></div>
-          </div>
-        </div><!--end of post preview-->
-      </a>
-      
-      <a class="post-link" href="post-single.html">
-        <div class="post-preview pad-large offix medium-12 left text-center" style="background-image: url(http://37.media.tumblr.com/44baa94068cc1d675d765c667b18ece5/tumblr_mzal2nkLP81slhhf0o1_1280.jpg); background-position: initial initial; background-repeat: initial initial;">
-          <div class="post-overlay"></div>
-          
-          <div class="post-preview-content">
-            <span class="date"><em>3rd Feb</em></span>
-            <h2>Questioning the validity of video backgrounds</h2>
-            <h6 class="alt-h">Posted by Maximus Paws</h6>
-            <div class="line"></div>
-          </div>
-
-        </div><!--end of post preview-->
-      </a>
-      
-      <a class="post-link" href="post-single.html">
-        <div class="post-preview pad-large offix medium-12 left text-center" style="background-image: url(http://24.media.tumblr.com/4e6f77aee4893d6026dd4995dc326a66/tumblr_mztn0xLL6b1slhhf0o1_1280.jpg); background-position: initial initial; background-repeat: initial initial;">
-          <div class="post-overlay"></div>
-          
-          <div class="post-preview-content">
-            <span class="date"><em>26th Jan</em></span>
-            <h2>Using CSS animations sparingly</h2>
-            <h6 class="alt-h">Posted by Craig Garner</h6>
-            <div class="line"></div>
-          </div>
-        </div><!--end of post preview-->
-      </a>
-      
-      
+          </div><!--end of post preview-->
+        </a>
+      </div> 
+            
       </div><!--end of blog preview holder-->
       
       
