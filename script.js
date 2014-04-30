@@ -56,35 +56,6 @@
 		$scope.message = 'Everyone come and see how good I look!';
 
 		$(document).ready(function(){
-			$('#login').click(function(){
-				$('#myModal').modal('show');
-			});
-
-			$('.payment').click(function(){
-				$('#paymentModal').modal('show');
-			});
-
-			$('.create').click(function(){
-				$('#createModal').modal('show');
-			});
-
-			$('.red_video').popover({
-			offset: 10,
-			trigger: 'manual',
-			html: true,
-			placement: 'top',
-			template: '<div class="popover" onmouseover="$(this).mouseleave(function() {$(this).hide();});"><div class="arrow"></div><div class="popover-inner"><h3 class="popover-title"></h3><div class="popover-content"><p></p></div></div></div>'
-			}).mouseenter(function(e) {
-			$(this).popover('show');
-			}).mouseleave(function(e) {
-			var _this = this;
-			setTimeout(function() {
-			if (!$(".popover:hover").length) {
-			  $(_this).popover("hide");
-			 }
-			}, 100);
-			});
-
 		});
 
 	});
