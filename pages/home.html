@@ -1,91 +1,251 @@
-<div class="jumbotron text-center">
-	<h1>SPEAK YOUR LEO</h1>
-	<p>Join real-time conversation with your favorite organizations to discuss the things that matter most</p>
-  <div class="col-md-12"><span class="glyphicon-play-circle"></span></div>
-	<a href="#signup"><button class="btn btn-primary btn-lg">JOIN THE CONVERSATION</button></a>
-</div>
-
-<div class="container">
-  <h2 class="text-center" style="margin-bottom:30px">Upcoming Live Vonvos</h2>
-  <div class="col-md-12">
-  	<div class="row">
-  		<div class="col-md-3">
-            <div class="thumbnail">
-              <img src="http://placehold.it/500x300" alt="">
-                <div class="caption">
-                  <h4>Thumbnail label</h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, soluta, eligendi doloribus sunt minus amet sit debitis repellat. Consectetur, culpa itaque odio similique suscipit</p>
+  <div id="loader" style="padding-top: 172.5px; display: none;">
+    <div id="progress-bar" style="width: 100%;"></div>
+  </div>
+  
+  <div id="main-container">
+    
+    <a id="home-scroll"></a>
+    <section id="home">
+    
+      <div id="home-slider">
+        
+        <ul class="slides">
+        
+          <li class="has-parallax cover-bg flex-active-slide" style="width: 100%; float: left; margin-right: -100%; position: relative; display: block; z-index: 2; background-image: url(http://www.onepagerwebsite.me/profile_img/1392039419bg1_p39970_u45.jpg); opacity: 1; background-position: 50% 295px; background-repeat: initial initial;">
+            <div class="row slide-content text-center" style="padding-top: 228px; opacity: -0.10499999999999998;">
+              <div class="medium-12 medium-centered columns">
+                
+                <div class="home-title offix">
+                  <h3 class="headline">Pixelcrafte<span class="last-letter">r</span></h3>
+                  <div class="title-lower">
+                    <p class="text-white"><em>Freelance web &amp; graphic designer in Melbourne, AU</em></p>
+                  </div>
+                </div>
+                
               </div>
             </div>
-  		</div>
-  		<div class="col-md-3">
-            <div class="thumbnail">
-              <img src="http://placehold.it/500x300" alt="">
-                <div class="caption">
-                  <h4>Thumbnail label</h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, soluta, eligendi doloribus sunt minus amet sit debitis repellat. Consectetur, culpa itaque odio similique suscipit</p>
-              </div>
+            <div class="slide-overlay"></div>
+            
+          </li><!--end of individual slide-->
+          
+
+        </ul>
+        
+      <ol class="flex-control-nav flex-control-paging" style="opacity: -0.10499999999999998;"></ol></div><!--end of home-slider-->
+    
+    </section><!--end of home section-->
+    
+    <div id="nav-holder" style="height: 94px; display:none">
+      <div id="navigation" class="sticky-nav">
+        <div class="row">
+      
+          <div class="medium-4 columns text-right">
+            <ul class="menu">
+              <li><a class="smooth-scroll" href="#about-scroll">About</a></li>
+              <li><a class="smooth-scroll" href="#work-scroll">Work</a></li>
+            </ul>
+          </div>
+        
+        
+          <div class="medium-4 columns text-center">
+            <a href="#home-scroll" class="smooth-scroll"><img id="logo" alt="logo" src="img/logo.png"></a>
+          </div>
+        
+          <div class="medium-4 columns text-left">
+            <ul class="menu">
+              <li><a class="smooth-scroll" href="#blog-scroll">Journal</a></li>
+              <li><a class="smooth-scroll" href="#contact-scroll">Contact</a></li>
+            </ul>
+          </div>
+        
+          <div class="mobile-toggle"><i class="icon icon_menu-square_alt2"></i></div>
+        </div>
+      </div>
+    </div>
+    
+    <a id="about-scroll"></a>
+    <section id="about" class="pad-large">
+      
+      <div class="row">
+        <div class="medium-12 columns text-center">
+          <div class="page-title">
+            <h6 class="alt-h">About Me</h6>
+            <div class="medium-4 line"><div class="icon icon-profile"></div></div>
+            <h3>I'm an earthy, trendy hipster</h3>
+          </div>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="medium-10 medium-centered columns text-justify">
+          <p class="lead text-justify">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          </p>
+          
+          <p class="lead">
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. 
+          </p>
+          
+          <p class="lead">
+            Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+          </p>
+          
+          <div class="signature">
+            <img alt="signature" src="http://upload.wikimedia.org/wikipedia/commons/3/3a/Jon_Kirsch's_Signature.png">
+          </div>
+        </div>
+      </div>
+    
+    </section><!--end of about section-->
+    
+    <a id="blog-scroll"></a>
+    <section id="blog" class="pad-large">
+    
+      <div class="row">
+        <div class="medium-12 columns text-center">
+          <div class="page-title">
+            <h6 class="alt-h">Journal</h6>
+            <div class="medium-4 line"><div class="icon icon-agenda"></div></div>
+            <h3>Thoughts &amp; Ideas</h3>
+          </div>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="medium-12 columns text-center">
+          <p class="lead">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          </p>
+        </div>
+      </div>
+      
+      <div id="blog-preview-holder" class="offix">
+      
+      <a class="post-link" href="#contact">
+        <div class="post-preview pad-large offix medium-12 left text-center" style="background-image: url(http://37.media.tumblr.com/3afad829ce330a66b3bbb98831c1c393/tumblr_mx3tpto69r1st5lhmo1_1280.jpg); background-position: initial initial; background-repeat: initial initial;">
+          <div class="post-overlay"></div>
+          
+          <div class="post-preview-content">
+            <span class="date"><em>25th Feb</em></span>
+            <h2>Pondering the necessity of spinning icons</h2>
+            <h6 class="alt-h">Posted by Craig Garner</h6>
+            <div class="line"></div>
+          </div>
+
+        </div><!--end of post preview-->
+      </a>
+      
+      <a class="post-link" href="#contact">
+        <div class="post-preview pad-large offix medium-12 left text-center" style="background-image: url(http://37.media.tumblr.com/050b3fbdfc0005dfa550e137a9440981/tumblr_ms9mveNXX21st5lhmo1_1280.jpg); background-position: initial initial; background-repeat: initial initial;">
+          <div class="post-overlay"></div>
+          
+          <div class="post-preview-content">
+            <span class="date"><em>21st Feb</em></span>
+            <h2>Discussing the stupidity of skill bars</h2>
+            <h6 class="alt-h">Posted by James Hillier</h6>
+            <div class="line"></div>
+          </div>
+        </div><!--end of post preview-->
+      </a>
+      
+      <a class="post-link" href="post-single.html">
+        <div class="post-preview pad-large offix medium-12 left text-center" style="background-image: url(http://37.media.tumblr.com/44baa94068cc1d675d765c667b18ece5/tumblr_mzal2nkLP81slhhf0o1_1280.jpg); background-position: initial initial; background-repeat: initial initial;">
+          <div class="post-overlay"></div>
+          
+          <div class="post-preview-content">
+            <span class="date"><em>3rd Feb</em></span>
+            <h2>Questioning the validity of video backgrounds</h2>
+            <h6 class="alt-h">Posted by Maximus Paws</h6>
+            <div class="line"></div>
+          </div>
+
+        </div><!--end of post preview-->
+      </a>
+      
+      <a class="post-link" href="post-single.html">
+        <div class="post-preview pad-large offix medium-12 left text-center" style="background-image: url(http://24.media.tumblr.com/4e6f77aee4893d6026dd4995dc326a66/tumblr_mztn0xLL6b1slhhf0o1_1280.jpg); background-position: initial initial; background-repeat: initial initial;">
+          <div class="post-overlay"></div>
+          
+          <div class="post-preview-content">
+            <span class="date"><em>26th Jan</em></span>
+            <h2>Using CSS animations sparingly</h2>
+            <h6 class="alt-h">Posted by Craig Garner</h6>
+            <div class="line"></div>
+          </div>
+        </div><!--end of post preview-->
+      </a>
+      
+      
+      </div><!--end of blog preview holder-->
+      
+      
+      
+      <div class="row">
+        <div class="medium-12 columns text-center">
+          <h3>Oh I've got plenty more to say</h3>
+          <a href="blog.html"><div class="btn space-top"><h6 class="alt-h">See all posts</h6></div></a>
+        </div>
+      </div>
+    
+    </section><!--end of blog section-->
+  
+    <a id="contact-scroll"></a>
+    <section id="contact" class="text-divider bg-cover pad-large" style="background-image: url(http://www.onepagerwebsite.me/profile_img/1392039419bg1_p39970_u45.jpg); background-position: initial initial; background-repeat: initial initial;">
+    
+      
+      <div class="divider-overlay"></div>
+    
+      <div class="row divider-content">
+        <div class="medium-4 columns text-center contact-method">
+          <a href="#"><div class="icon icon-geolocalizator text-white"></div></a>
+          <span class="text-white"><em>Melbourne, Vic</em></span>
+        </div>
+        
+        <div class="medium-4 columns text-center contact-method">
+          <a href="#"><div class="icon icon-mail-open text-white"></div></a>
+          <span class="text-white"><em>hello@brunswick.net</em></span>
+        </div>
+        
+        <div class="medium-4 columns text-center contact-method">
+          <a href="#"><div class="icon icon-smartphone text-white"></div></a>
+          <span class="text-white"><em>0483 298 127 </em></span>
+        </div>
+      </div>
+      
+      <div class="row divider-content">
+        <div class="medium-8 medium-centered columns">
+          <form id="contact-form" class="text-center">
+            <h3 class="text-white">Drop us a line</h3>
+            <input id="form-name" type="text" placeholder="Name">
+            <input id="form-email" type="text" placeholder="Email">
+            <input id="form-msg" type="text" placeholder="Message">
+            <div class="text-right">
+              <span id="details-error" class="text-white">*Error: Please complete all fields correctly</span>
+              <span id="form-sent" class="text-white">Thankyou, your enquiry has been sent!</span>
+              <div class="btn white-btn clear-btn"><h6 class="alt-h text-white">Clear</h6></div>
+              <div id="form-btn" class="btn white-btn"><h6 class="alt-h text-white">Send</h6></div>
             </div>
-  		</div>
-  		<div class="col-md-3">
-            <div class="thumbnail">
-              <img src="http://placehold.it/500x300" alt="">
-                <div class="caption">
-                  <h4>Thumbnail label</h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, soluta, eligendi doloribus sunt minus amet sit debitis repellat. Consectetur, culpa itaque odio similique suscipit</p>
-              </div>
-            </div>
-  		</div>
-  		<div class="col-md-3">
-            <div class="thumbnail">
-              <img src="http://placehold.it/500x300" alt="">
-                <div class="caption">
-                  <h4>Thumbnail label</h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, soluta, eligendi doloribus sunt minus amet sit debitis repellat. Consectetur, culpa itaque odio similique suscipit</p>
-              </div>
-            </div>
-  		</div>
-  	</div>
-  </div>
-</div>
-
-
-<div class="container">
-  <hr class="featurette-divider">
-  <div class="row featurette">
-    <div class="col-md-7">
-      <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
-      <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-    </div>
-    <div class="col-md-5">
-      <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-    </div>
-  </div>
-
-  <hr class="featurette-divider">
-
-  <div class="row featurette">
-    <div class="col-md-5">
-      <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-    </div>
-    <div class="col-md-7">
-      <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
-      <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-    </div>
-  </div>
-
-  <hr class="featurette-divider">
-
-  <div class="row featurette">
-    <div class="col-md-7">
-      <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-      <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-    </div>
-    <div class="col-md-5">
-      <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-    </div>
-  </div>
-
-  <hr class="featurette-divider">
-</div>
-
+          </form>
+        </div>
+      </div>
+    
+      <div class="row divider-content">
+        <div class="medium-12 columns text-center">
+          <div class="social-links offix">
+            <a href="#"><h3 class="text-white">Twitter</h3></a>
+            <a href="#"><h3 class="text-white">Facebook</h3></a>
+            <a href="#"><h3 class="text-white">Instagram</h3></a>
+            <a href="#"><h3 class="text-white">Linkedin</h3></a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="row divider-content">
+        <div class="medium-12 columns text-center">
+          <span class="copy-text text-white alt-h">© 2014 Thread One Page</span>
+        </div>
+      </div>
+    
+    </section><!--end of contact section-->
+  
+  </div><!--end of main container-->

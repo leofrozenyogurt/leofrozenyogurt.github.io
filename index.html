@@ -5,12 +5,12 @@
 
 <head>
   <!-- SCROLLS -->
-  <link rel="stylesheet" href="css/bootstrap.css" />
-  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
 
   <!-- SPELLS -->
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  <script type="text/javascript" src="js/bootstrap.js"></script>
   <script type="text/javascript" src="js/app.js"></script>
   <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.10/angular.min.js"></script>
   <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.10/angular-route.js"></script>
@@ -21,30 +21,6 @@
 <!-- define angular controller -->
 <body ng-controller="mainController">
 
-  <nav class="navbar navbar-default">
-    <div class="container">
-      <div class="navbar-header">
-        <a class="navbar-brand" href="#">VONVO</a>
-      </div>
-
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#organizations">View Organizations</a></li>
-        <li><a id="login" href="#"><button class="btn btn-primary">LOGIN</button></a></li>
-        <li style="display:none">
-          <ul class="nav navbar-nav">
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">JOSH CURRIE </a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Account Settings </a></li>
-                <li class="divider"></li>
-                <li><a href="#">User stats </a></li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-      </ul>
-    </div>
-  </nav>
 
   <div id="main">
   
@@ -54,214 +30,8 @@
     
   </div>
   
-<footer class="text-center" style="margin-top:100px">
-    <div class="container">    
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="col-md-3">
-            <ul class="list-unstyled">
-              <li>GitHub<li>
-              <li><a href="#">About us</a></li>
-              <li><a href="#">Blog</a></li>
-              
-            </ul>
-          </div>
-          <div class="col-md-3">
-            <ul class="list-unstyled">
-              <li>Applications<li>
-              <li><a href="#">Product for Mac</a></li>
-                        
-            </ul>
-          </div>
-          <div class="col-md-3">
-            <ul class="list-unstyled">
-              <li>Services<li>
-              <li><a href="#">Web analytics</a></li>
-                         
-            </ul>
-          </div>
-          <div class="col-md-3">
-            <ul class="list-unstyled">
-              <li>Documentation<li>
-              <li><a href="#">Product Help</a></li>
-                          
-            </ul>
-          </div>  
-        </div>
-      </div>
-      <hr>
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="col-md-8">
-            <a href="#">Terms of Service</a>    
-            <a href="#">Privacy</a>    
-            <a href="#">Security</a>
-          </div>
-          <div class="col-md-4">
-            <p class="muted pull-right">© 2013 Company Name. All rights reserved</p>
-          </div>
-        </div>
-      </div>
-    </div>
-</footer>
-
-<!-- LOGIN MODAL -->
-
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-        <h4 class="modal-title" id="myModalLabel">SIGN IN</h4>
-      </div>
-      <div class="modal-body">
-        <button class=" btn btn-primary btn-large">SIGN IN WITH FACEBOOK</button>
-        <h3 class="text-center"> or </h3>
-         <form method="post" action='' name="login_form">
-          <p><input type="text" class="span3" name="eid" id="email" placeholder="Email"></p>
-          <p><input type="password" class="span3" name="passwd" placeholder="Password"></p>
-          <p><button type="submit" class="btn btn-primary">Sign in</button>
-            <a href="#">Forgot Password?</a>
-          </p>
-        </form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
 
 
-<div class="modal fade" id="paymentModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-        <h4 class="modal-title" id="myModalLabel">ORG PAYMENT MODAL</h4>
-      </div>
-      <div class="modal-body">
-      <div class="col-md-12">
-        <div class="row">
-          <div class="col-md-6">
-            <form>
-              <input type="text" class="form-control" placeholder="Address">
-            </form>
-          </div>
-          <div class="col-md-6">
-              <div class="panel panel-default">
-                  <div class="panel-heading">
-                      <h3 class="panel-title">
-                          Payment Details
-                      </h3>
-                      <div class="checkbox pull-right">
-                          <label>
-                              <input type="checkbox" />
-                              Remember
-                          </label>
-                      </div>
-                  </div>
-                  <div class="panel-body">
-                      <form role="form">
-                      <div class="form-group">
-                          <label for="cardNumber">
-                              CARD NUMBER</label>
-                          <div class="input-group">
-                              <input type="text" class="form-control" id="cardNumber" placeholder="Valid Card Number"
-                                  required autofocus />
-                              <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
-                          </div>
-                      </div>
-                      <div class="row">
-                          <div class="col-xs-7 col-md-7">
-                              <div class="form-group">
-                                  <label for="expityMonth">
-                                      EXPIRY DATE</label>
-                                  <div class="col-xs-6 col-lg-6 pl-ziro">
-                                      <input type="text" class="form-control" id="expityMonth" placeholder="MM" required />
-                                  </div>
-                                  <div class="col-xs-6 col-lg-6 pl-ziro">
-                                      <input type="text" class="form-control" id="expityYear" placeholder="YY" required /></div>
-                              </div>
-                          </div>
-                          <div class="col-xs-5 col-md-5 pull-right">
-                              <div class="form-group">
-                                  <label for="cvCode">
-                                      CV CODE</label>
-                                  <input type="password" class="form-control" id="cvCode" placeholder="CV" required />
-                              </div>
-                          </div>
-                      </div>
-                      </form>
-                  </div>
-              </div>
-              <ul class="nav nav-pills nav-stacked">
-                  <li class="active"><a href="#"><span class="badge pull-right"><span class="glyphicon glyphicon-usd"></span>4200</span> Final Payment</a>
-                  </li>
-              </ul>
-              <br/>
-              <a href="http://www.jquery2dotnet.com" class="btn btn-success btn-lg btn-block" role="button">Pay</a>
-          </div>
-        </div>
-       </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<div class="modal fade" id="createModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-        <h4 class="modal-title" id="myModalLabel">CREATE A LIVE VONVO</h4>
-      </div>
-      <div class="modal-body">
-            <form class="form-horizontal">
-            <fieldset>
-            <!-- Sign In Form -->
-            <!-- Text input-->
-            <div class="control-group">
-              <div class="controls">
-                <input required=""  type="text" class="form-control" placeholder="vonvo" class="input-medium" required="">
-              </div>
-            </div>
-
-            <div class="control-group">
-              <div class="controls">
-                <input required=""  type="text" class="form-control" placeholder="vonvo" class="input-medium" required="">
-              </div>
-            </div>
-
-            <div class="control-group">
-              <div class="controls">
-                <input required=""  type="text" class="form-control" placeholder="vonvo" class="input-medium" required="">
-              </div>
-            </div>
-
-            <!-- Button -->
-            <div class="control-group">
-              <label class="control-label" for="signin"></label>
-              <div class="controls">
-                <button id="signin" name="signin" class="btn btn-success">Create Vonvo</button>
-              </div>
-            </div>
-            </fieldset>
-            </form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
 
 
 <!-- END OF LOGIN MODAL --> 
