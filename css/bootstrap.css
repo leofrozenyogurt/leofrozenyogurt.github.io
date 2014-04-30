@@ -3744,6 +3744,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   padding: 15px 15px;
   font-size: 18px;
   line-height: 20px;
+  font: italic bold 36px/50px "open sans";
 }
 .navbar-brand:hover,
 .navbar-brand:focus {
@@ -4380,6 +4381,9 @@ a.list-group-item.active > .badge,
   margin-bottom: 15px;
   font-size: 21px;
   font-weight: 200;
+  margin-left: auto;
+  margin-right: auto;
+  width: 45%;
 }
 .container .jumbotron {
   border-radius: 6px;
@@ -5799,11 +5803,11 @@ button.close {
   border-radius:2px;
 }
 .main{
-  padding: 38px;
+  padding: 15px 38px 5px 38px;
 }
 .social-box{
   margin: 0 auto;
-  padding: 38px;
+  padding: 20px 38px 10px 38px;
   border-bottom:1px #ccc solid;
 }
 .social-box a{
@@ -5816,9 +5820,9 @@ button.close {
   font-size:20px;
 }
 .heading-desc{
-  font-size:20px;
+  font-size:26px;
   font-weight:bold;
-  padding:38px 38px 0px 38px;
+  padding:28px 38px 0px 38px;
   
 }
 .form-signin .form-signin-heading,
