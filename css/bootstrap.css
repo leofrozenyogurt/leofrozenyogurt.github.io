@@ -5870,3 +5870,11 @@ button.close {
 .red_video {
   color:red;
 }
+
+.grey_video_box {
+  height: 300px;
+width: 400px;
+background: grey;
+margin-bottom: 5px;
+
+}
