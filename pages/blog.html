@@ -42,57 +42,21 @@
 		
 		</div><!--end of post-hero-->
 		
-		<a class="post-link" href="post-single.html">
-			<div class="post-preview pad-large offix">
-				<div class="row">
-					<div class="medium-12 columns text-center">
-						<span class="date"><em>25th Feb</em></span>
-						<h3>Pondering the necessity of spinning icons</h3>
-						<h6 class="alt-h">Posted by Craig Garner</h6>
-						<div class="line"></div>
+		<div ng-repeat="post in posts" ng-class="{tableEven: !($index%2), tableOdd: ($index%2)}"> 
+			<a class="post-link" href="post-single.html">
+				<div class="post-preview pad-large offix">
+					<div class="row">
+						<div class="medium-12 columns text-center">
+							<span class="date"><em>{{post.date}}</em></span>
+							<h3>{{post.title}}</h3>
+							<h6 class="alt-h">Posted by {{post.author}}</h6>
+							<div class="line"></div>
+						</div>
 					</div>
-				</div>
-			</div><!--end of post preview-->
-		</a>
-		
-		<a class="post-link" href="post-single.html">
-			<div class="post-preview pad-large offix">
-				<div class="row">
-					<div class="medium-12 columns text-center">
-						<span class="date"><em>21st Feb</em></span>
-						<h3>Discussing the uselessness of percentage skill bars</h3>
-						<h6 class="alt-h">Posted by James Hillier</h6>
-						<div class="line"></div>
-					</div>
-				</div>
-			</div><!--end of post preview-->
-		</a>
-		
-		<a class="post-link" href="post-single.html">
-			<div class="post-preview pad-large offix">
-				<div class="row">
-					<div class="medium-12 columns text-center">
-						<span class="date"><em>28th Jan</em></span>
-						<h3>Questioning the validity of video backgrounds</h3>
-						<h6 class="alt-h">Posted by Maximus Paws</h6>
-						<div class="line"></div>
-					</div>
-				</div>
-			</div><!--end of post preview-->
-		</a>
-		
-		<a class="post-link" href="post-single.html">
-			<div class="post-preview pad-large offix">
-				<div class="row">
-					<div class="medium-12 columns text-center">
-						<span class="date"><em>14th Dec</em></span>
-						<h3>How to use css animations sparingly</h3>
-						<h6 class="alt-h">Posted by Percival Thompson</h6>
-						<div class="line"></div>
-					</div>
-				</div>
-			</div><!--end of post preview-->
-		</a>
+				</div><!--end of post preview-->
+			</a>
+		</div>
+
 		
 		<div class="post-single-footer text-divider pad-large" style="background-image: url(http://37.media.tumblr.com/a0b93d60be831e75effaed6e3a4db7b7/tumblr_n381e8QTLE1st5lhmo1_1280.jpg); background-position: initial initial; background-repeat: initial initial;">
 			
