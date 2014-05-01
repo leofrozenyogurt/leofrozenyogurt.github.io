@@ -28,7 +28,7 @@
 		  })
 
 		  // route for the blogs page
-		  .when('/blogs', {
+		  .when('/blog', {
 		    templateUrl: 'pages/blog.html',
 		    controller: 'postsController',
 		    resolve : {
