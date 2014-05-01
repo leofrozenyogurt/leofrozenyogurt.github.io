@@ -139,9 +139,15 @@ scotchApp.factory('Posts', function($http, $q) {
 
 	});
 	// create the controller and inject Angular's $scope
-	scotchApp.controller('postController', function($scope,post) {
+	scotchApp.controller('postController', function($scope,post,$sce) {
 
 	$scope.post = post;
+
+	$scope.renderHtml = function(html_code)
+	{
+	    return $sce.trustAsHtml(html_code);
+	};
+
 
 	});
 
