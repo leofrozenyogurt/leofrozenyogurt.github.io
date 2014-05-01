@@ -1,7 +1,7 @@
 [{"title": "Famo.us and its setbacks",
 "date" : " April 28th",
 "id": 1,
-"content" : "<pre><code class='hljs'> $(document).ready(function(){alert('hello');});</code></pre>"},
+"content" : "\u003cpre\u003e\u003ccode class=\u0027hljs\u0027\u003e \r\n  $(document).ready(function(){\r\n    alert(\u0027hello\u0027);\r\n  });\r\n\u003c/code\u003e\u003c/pre"},
 {"title": "Belongs_to and its uses",
 "date" : " April 30th",
 "content" : "",
