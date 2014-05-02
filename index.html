@@ -1,28 +1,33 @@
 <!DOCTYPE html>
 
 <!-- define angular app -->
-<html ng-app="scotchApp">
+<html ng-app="phonecatApp">
 
 <head>
   <!-- SCROLLS -->
-    <link rel="stylesheet" href="css/foundation.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/icons.css">
-    <link rel="stylesheet" href="http://yandex.st/highlightjs/8.0/styles/solarized_dark.min.css">
-    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
+<link rel="stylesheet" href="css/foundation.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/icons.css">
+<link rel="stylesheet" href="http://yandex.st/highlightjs/8.0/styles/solarized_dark.min.css">
+<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
 
-  <!-- SPELLS -->
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  <script type="text/javascript" src="js/app.js"></script>
-  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.10/angular.min.js"></script>
-  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.10/angular-route.js"></script>
-  <script src="http://cdnjs.cloudflare.com/ajax/libs/Chart.js/0.2.0/Chart.min.js"></script>
-  <script src="script.js"></script>
-  <script src="http://yandex.st/highlightjs/8.0/highlight.min.js"></script>
+<!-- SPELLS -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.10/angular.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.10/angular-route.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.10/angular-resource.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.10/angular-animate.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/Chart.js/0.2.0/Chart.min.js"></script>
+<script src="http://yandex.st/highlightjs/8.0/highlight.min.js"></script>
+<script src="js/app.js"></script>
+<script src="js/controllers.js"></script>
+<script src="js/filters.js"></script>
+<script src="js/services.js"></script>
+
 </head>
 
 <!-- define angular controller -->
-<body ng-controller="mainController">
+<body >
 
 
   <div id="main">
@@ -30,7 +35,9 @@
     <!-- angular templating -->
 		<!-- this is where content will be injected -->
     
-    <div ng-view></div>
+  <div class="view-container">
+    <div ng-view class="view-frame"></div>
+  </div>
     
   </div>
   

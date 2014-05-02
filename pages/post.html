@@ -35,8 +35,8 @@
 			
 			<div class="row divider-content">
 				<div class="medium-12 columns text-center">
-					<h2 class="text-white">{{post.title}}</h2>
-					<p class="lead text-white">Written by <em>{{post.author}}</em> on <em>July 5th 2014</em></p>
+					<h2 class="text-white">{{blog.title}}</h2>
+					<p class="lead text-white">Written by <em>{{blog.author}}</em> on <em>July 5th 2014</em></p>
 					<a href="#">
 						<div class="post-meta-button">
 							<div class="icon icon-heart"></div>
@@ -61,7 +61,7 @@
 		
 		<div class="row pad-large post-single-text">
 			<div class="medium-10 medium-centered columns">
-				<div ng-bind-html="renderHtml(post.content)"></div>
+				<div ng-bind-html="renderHtml(blog.content)"></div>
 			</div>
 		</div>
 		

@@ -42,14 +42,14 @@
 		
 		</div><!--end of post-hero-->
 		
-		<div ng-repeat="post in posts" ng-class="{tableEven: !($index%2), tableOdd: ($index%2)}"> 
-			<a class="post-link" href="#posts/{{post.id}}">
+		<div ng-repeat="blog in blogs " ng-class="{tableEven: !($index%2), tableOdd: ($index%2)}"> 
+			<a class="post-link" href="#blog/{{blog.id}}">
 				<div class="post-preview pad-large offix">
 					<div class="row">
 						<div class="medium-12 columns text-center">
-							<span class="date"><em>{{post.date}}</em></span>
-							<h3>{{post.title}}</h3>
-							<h6 class="alt-h">Posted by {{post.author}}</h6>
+							<span class="date"><em>{{blog.date}}</em></span>
+							<h3>{{blog.title}}</h3>
+							<h6 class="alt-h">Posteded by {{blog.author}}</h6>
 							<div class="line"></div>
 						</div>
 					</div>
