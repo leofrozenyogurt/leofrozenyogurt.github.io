@@ -43,7 +43,7 @@
 		</div><!--end of post-hero-->
 		
 		<div ng-repeat="post in posts" ng-class="{tableEven: !($index%2), tableOdd: ($index%2)}"> 
-			<a class="post-link" href="post-single.html">
+			<a class="post-link" href="#posts/{{post.id}}">
 				<div class="post-preview pad-large offix">
 					<div class="row">
 						<div class="medium-12 columns text-center">
