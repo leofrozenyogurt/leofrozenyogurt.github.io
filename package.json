@@ -1,0 +1,10 @@
+  {
+  "name"         : "leofrozenyogurt",
+  "version"      : "0.0.0",
+  "description"  : "Blog",
+  "main"         : "server.js",
+  "author"       : "Leo Royzengurt",
+  "dependencies" : {
+    "express"    : "latest"
+  }
+}
