@@ -17,18 +17,20 @@ Rails g model Post title:string content:text  user_id:string
 <p>And then in your model</p>
 
 <pre><code class=' hljs ruby'><span class='ruby'>
-Post
-belongs_to: user 
+class Post < ActiveRecord::Base
+	belongs_to: user 
+end
 </code></pre>
 
-<p>The right way of doing this is</p>
+<p class="lead text-justify">The right way of doing this is</p>
 <br>
 <pre><code class=' hljs ruby'><span class='ruby'>
 Rails g model Post title:string content:text  user:belongs_to
 </code></pre>
 
-<p>This way the model will be created with the belongs_to association there already!
-
+<p class="lead text-justify">This way the model will be created with the belongs_to association there already!
+</p>
+<p class="lead text-justify">
 Remember as devs we want to be fast so we can move on to more awesome code ! Don't make more work for yourself !</p>
 
 

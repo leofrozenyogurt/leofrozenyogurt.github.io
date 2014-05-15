@@ -5,6 +5,9 @@
   "main"         : "server.js",
   "author"       : "Leo Royzengurt",
   "dependencies" : {
-    "express"    : "latest"
+    "express"    : "latest",
+     "morgan": "~1.0.0",
+      "body-parser": "~1.0.0",
+      "method-override": "~1.0.0"
   }
 }
