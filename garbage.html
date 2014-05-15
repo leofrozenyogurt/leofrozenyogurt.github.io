@@ -1,61 +1,27 @@
-<p class="lead text-justify">Belongs to associations are awesome right ! But in recent dealings with developers I have seen some shocking ways to implement it.</p>
-
-<br>
-
-<p class="lead text-justify" > Let's take for example a reddit type application where we have a User model and we have a Post model. So posts belong to users and users have many posts. </p>
-
-<br>
-
-<p class="lead text-justify" > The wrong way of doing this is </p>
-
-
-
-<pre><code class=' hljs ruby'><span class='ruby'>
+<pre>
+	<code hljs language='ruby'>
 Rails g model Post title:string content:text  user_id:string
-</code></pre>
+	</code>
+</pre>
 
 <p>And then in your model</p>
 
-<pre><code class=' hljs ruby'><span class='ruby'>
-class Post < ActiveRecord::Base
+<pre>
+	<code hljs language='ruby'>
+class Post &gt;ActiveRecord::Base
 	belongs_to: user 
 end
-</code></pre>
+	</code>
+</pre>
 
 <p class="lead text-justify">The right way of doing this is</p>
 <br>
-<pre><code class=' hljs ruby'><span class='ruby'>
+<pre><code hljs class='ruby'>
 Rails g model Post title:string content:text  user:belongs_to
+</span>
 </code></pre>
 
 <p class="lead text-justify">This way the model will be created with the belongs_to association there already!
 </p>
 <p class="lead text-justify">
 Remember as devs we want to be fast so we can move on to more awesome code ! Don't make more work for yourself !</p>
-
-
-Blog post
-
-Belongs to associations are awesome right ! But in recent dealings with developers I have seen some shocking ways to implement it.
-
-Let's take for example a reddit type application where we have a User model and we have a Post model. So posts belong to users and users have many posts.
-
-The wrong way of doing this is
-
-Rails g model Post title:string content:text  user_id:string
-
-And then in your model
-
-Post
-Belongs_to
-
-The right way of doing this is
-
-Rails g model Post title:string content:text  user:belongs_to
-
-This way the model will be created with the belongs_to association there already!
-
-Remember as devs we want to be fast so we can move on to more awesome code ! Don't make more work for yourself !
-
-
-Sent from my iPhone

@@ -6,9 +6,16 @@ var phonecatApp = angular.module('phonecatApp', [
   'ngRoute',
   'phonecatControllers',
   'phonecatFilters',
-  'phonecatServices'
+  'phonecatServices',
+  'hljs',
 ]);
 
+phonecatApp.config(function (hljsServiceProvider) {
+  hljsServiceProvider.setOptions({
+    // replace tab with 4 spaces
+    tabReplace: '    '
+  });
+});
 
 phonecatApp.config(['$routeProvider',
   function($routeProvider) {
