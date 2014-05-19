@@ -18,5 +18,10 @@ phonecatControllers.controller('BlogDetailCtrl', ['$scope', '$routeParams', 'Blo
       return $sce.trustAsHtml(html_code);
     };
 
+
+   $scope.$watch('$viewContentLoaded', function(){
+        $('pre code').each(function(i, e) {hljs.highlightBlock(e)});
+   });
+
   }]);
 

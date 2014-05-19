@@ -15,6 +15,7 @@ phonecatApp.config(function (hljsServiceProvider) {
     // replace tab with 4 spaces
     tabReplace: '    '
   });
+  
 });
 
 phonecatApp.config(['$routeProvider',
