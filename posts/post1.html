@@ -1,3 +1,13 @@
+<p class="lead text-justify">Belongs to associations are awesome right ! But in recent dealings with developers I have seen some shocking ways to implement it.</p>
+
+<br>
+
+<p class="lead text-justify" > Let's take for example a reddit type application where we have a User model and we have a Post model. So posts belong to users and users have many posts. </p>
+
+<br>
+
+<p class="lead text-justify" > The wrong way of doing this is </p>
+
 <pre>
 	<code hljs language='ruby'>
 Rails g model Post title:string content:text  user_id:string
