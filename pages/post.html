@@ -1,5 +1,6 @@
 
   <div id="main-container" class="post-single-container">
+		
 		<div id="nav-holder" style="height: 94px;">
 			<div id="navigation" class="innerpage-nav">
 				<div class="row">
@@ -60,7 +61,7 @@
 		
 		<div class="row pad-large post-single-text">
 			<div class="medium-10 medium-centered columns">
-				<div ng-bind-html="renderHtml(blog.content)" data-ng-init="highlightMe();"></div>
+				<div ng-include src="blog.content"></div>
 			</div>
 		</div>
 		

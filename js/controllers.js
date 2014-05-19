@@ -14,14 +14,14 @@ phonecatControllers.controller('BlogDetailCtrl', ['$scope', '$routeParams', 'Blo
   function($scope, $routeParams, Blog, $sce) {
     $scope.blog = Blog.get({blogId: $routeParams.blogId});
 
+   $scope.$on('$viewContentLoaded', function() {
+     window.scrollTo(0,0);
+     $('pre code').each(function(i, e) {hljs.highlightBlock(e)});
+    });
+
     $scope.renderHtml = function(html_code){
       return $sce.trustAsHtml(html_code);
     };
 
-
-   $scope.$watch('$viewContentLoaded', function(){
-        $('pre code').each(function(i, e) {hljs.highlightBlock(e)});
-   });
-
-  }]);
+}]);
 
